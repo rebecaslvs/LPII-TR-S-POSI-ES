@@ -1,4 +1,10 @@
-
+/*
+ * id int privado
+posicao privado e string
+privado tipo string
+privado peso double
+cadastrar (): void
+ */
 package superatacadista1;
 
 import java.util.ArrayDeque;
@@ -200,7 +206,7 @@ public class Paletes {
 			if (palete.getIdentificador() == null ? busca == null : palete.getIdentificador().equals(busca)) 
                         {
 				iterator1.remove();
-                                //subtrair contagem dos contadores, peso e contagem no tipo
+                                //subtrair contagem dos contadores
 			}   
                }
                 
@@ -236,21 +242,21 @@ public class Paletes {
                {
 			Paletes palete = iterator1.next();
                         
-			System.out.println("PALETE NO TOPO DA PILHA A"+ paletes_nivel1.getLast());
-                        //mostrar peso e tipo desse palete
+			System.out.println("PALETE NO TOPO DA PILHA A= "+ paletes_nivel1.getLast());
+                        
                }
                 
                 while(iterator2.hasNext())
                {
 			Paletes palete = iterator2.next();
                         
-			System.out.println("PALETE NO TOPO DA PILHA B"+ paletes_nivel2.getLast());
+			System.out.println("PALETE NO TOPO DA PILHA B= "+ paletes_nivel2.getLast());
                }
                 while(iterator3.hasNext())
                {
 			Paletes palete = iterator3.next();
                         
-			System.out.println("PALETE NO TOPO DA PILHA C"+ paletes_nivel3.getLast());  
+			System.out.println("PALETE NO TOPO DA PILHA C= "+ paletes_nivel3.getLast());  
                }
                 menuprincipal();
     
