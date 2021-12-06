@@ -1,10 +1,4 @@
-/*
- * id int privado
-posicao privado e string
-privado tipo string
-privado peso double
-cadastrar (): void
- */
+
 package superatacadista1;
 
 import java.util.ArrayDeque;
@@ -313,7 +307,7 @@ public class Paletes {
                 if (numero_a[posicaoa] == 3)
                 {
                     System.out.println("POSIÇÃO DE EMPILHAMENTO CHEIA!");
-                    menuprincipal();
+                    escolha=1;
                 } else {
                     menu_tipo();
                     
@@ -324,7 +318,7 @@ public class Paletes {
                     System.out.println("TIPO: " +tipo_mercadoria);
                     System.out.println("PESO: " +peso_mercadoria);
                     System.out.println("ID: " +identificador);
-                    
+                    System.out.println("");
                     System.out.println("Palete adicionado a posição A e ao nível " + numero_a[posicaoa]);
                     paletes_nivel1.add(palete);
 
@@ -337,7 +331,7 @@ public class Paletes {
             } else if ("B".equals(menu_pp) == true) {
                 if (numero_b[posicaob] == 3) {
                     System.out.println("POSIÇÃO DE EMPILHAMENTO CHEIA!");
-                    menuprincipal();
+                    escolha=1;
                 } else {
                     menu_tipo();
 
@@ -345,7 +339,10 @@ public class Paletes {
                     numero_b[posicaob]++;
                     
                     Paletes palete = new Paletes (tipo_mercadoria, peso_mercadoria, identificador);
-                    
+                    System.out.println("TIPO: " +tipo_mercadoria);
+                    System.out.println("PESO: " +peso_mercadoria);
+                    System.out.println("ID: " +identificador);
+                    System.out.println("");
                     System.out.println("Palete adicionado a posição B e ao nível " + numero_b[posicaob]);
                     paletes_nivel2.add(palete);
 
@@ -359,7 +356,7 @@ public class Paletes {
             } else if ("C".equals(menu_pp) == true) {
                 if (numero_c[posicaoc] == 3) {
                     System.out.println("POSIÇÃO DE EMPILHAMENTO CHEIA!");
-                    menuprincipal();
+                    escolha=1;
                 } else {
                     menu_tipo();
 
@@ -367,7 +364,10 @@ public class Paletes {
                     numero_c[posicaoc]++;
                     
                     Paletes palete = new Paletes (tipo_mercadoria, peso_mercadoria, identificador);
-                    
+                    System.out.println("TIPO: " +tipo_mercadoria);
+                    System.out.println("PESO: " +peso_mercadoria);
+                    System.out.println("ID: " +identificador);
+                    System.out.println("");
                     System.out.println("Palete adicionado a posição C e ao nível " + numero_c[posicaoc]);
                     paletes_nivel3.add(palete);
 
