@@ -300,7 +300,7 @@ public class Paletes {
         
         while (escolha == 1) {
 
-            System.out.println("Esse palete será inserido em qual posição(A, B, C, D, E ou F): ");
+            System.out.println("Esse palete será inserido em qual posição(A, B ou C): ");
             String menu_pp = leitor.nextLine();
 
             if ("A".equals(menu_pp) == true) {
