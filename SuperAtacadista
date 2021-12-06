@@ -1,0 +1,13 @@
+
+package superatacadista1;
+
+
+public class SuperAtacadista1 
+{
+    public static void main(String[] args)
+    {
+        Paletes p1 = new Paletes("", 0f, "");
+        p1.menuprincipal();
+    }
+}
+ 
